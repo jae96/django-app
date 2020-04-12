@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'fwi_j5!y@hx$))yz(m6ntk^z4xd-n%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['glacial-fjord-90326.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['nameless-wave-30051.herokuapp.com/', '127.0.0.1']
 
 
 # Application definition
