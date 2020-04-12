@@ -4,16 +4,29 @@
 <h1>Covid19 Impact Estimator</h1>
 
 <form action="estimate">
-    Enter Population Size : <input type="text" name="data-population" align="right"><br>
-    Enter Time To Elapse :    <input type="text" name="data-time-to-elapse" align="right"><br>
-    Enter Reported Cases :    <input type="text" name="data-reported-cases" align="right"><br>
-    Enter Total Hospital Beds :    <input type="text" name="data-total-hospital-beds" align="right"><br>
-    Select Period Type :    <select name="data-period-type" align="right">
-                                <option value="days">Days</option>
-                                <option value="weeks">Weeks</option>
-                                <option value="months">Months</option>
-                            </select><br>
+    <label for="data-population">Enter Population size:</label>
+    <input id="data-population" type="text" name="data-population"><br>
+
+    <label for="data-time-to-elapse">Enter Time To Elapse:</label>
+    <input id="data-time-to-elapse" type="text" name="data-time-to-elapse"><br>
+
+    <label for="data-reported-cases">Enter Reported Cases:</label>
+    <input id="data-reported-cases" type="text" name="data-time-to-elapse"><br>
+
+    <label for="data-reported-cases">Enter Total Hospital Beds:</label>
+    <input id="data-total-hospital-beds" type="text" name="data-total-hospital-beds"><br>
+
+    <label for="data-period-type">Select Period Type:</label>
+    <select id="data-period-type">
+        <option value="days">Days</option>
+        <option value="weeks">Weeks</option>
+        <option value="months">Months</option>
+    </select><br>
+
     <br>
-    <input type="submit" name="data-go-estimate">
+    <label for="data-period-type"</label>
+    <input id="data-period-type" type="Submit" name="data-period-type"><br>
+
+
 </form>
 {% endblock %}
