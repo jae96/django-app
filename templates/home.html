@@ -1,32 +1,30 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Covid19 Impact Estimator</h1>
+<p align="middle"  style = "font-family:georgia,garamond,serif;font-size:16px;font-style:italic;">
+    Covid19 Impact Estimator
+</p>
 
-<form action="estimate">
-    <label for="data-population">Enter Population size:</label>
-    <input id="data-population" type="text" name="data-population"><br>
 
-    <label for="data-time-to-elapse">Enter Time To Elapse:</label>
-    <input id="data-time-to-elapse" type="text" name="data-time-to-elapse"><br>
-
-    <label for="data-reported-cases">Enter Reported Cases:</label>
-    <input id="data-reported-cases" type="text" name="data-time-to-elapse"><br>
-
-    <label for="data-reported-cases">Enter Total Hospital Beds:</label>
-    <input id="data-total-hospital-beds" type="text" name="data-total-hospital-beds"><br>
-
-    <label for="data-period-type">Select Period Type:</label>
-    <select id="data-period-type">
+<div>
+  <form action="estimate">
+    <label for="data-population">Population Size </label>
+    <input type="text" name="data-population" id="data-population" placeholder="Enter population size"><br>
+    <label for="data-time-to-elapse">Time To Elapse </label>
+    <input type="text" name="data-time-to-elapse" id="data-time-to-elapse" placeholder="Enter time to elapse"><br>
+    <label for="data-reported-cases">Reported Cases </label>
+    <input type="text" name="data-reported-cases" id="data-reported-cases" placeholder="Enter the number of reported cases"><br>
+    <label for="data-total-hospital-beds">Total Hospital Beds </label>
+    <input type="text" name="data-total-hospital-beds" id="data-total-hospital-beds" placeholder="Enter total number of hospital beds"><br>
+    <label for="data-period-type">Period Type </label>
+    <select name="data-period-type" id="data-period-type">
         <option value="days">Days</option>
         <option value="weeks">Weeks</option>
         <option value="months">Months</option>
     </select><br>
-
     <br>
-    <label for="data-period-type"</label>
-    <input id="data-period-type" type="Submit" name="data-period-type"><br>
-
+    <input type="submit" name="data-go-estimate">
 
 </form>
+</div>
 {% endblock %}
