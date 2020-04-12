@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Covid19 Impact Estimator</h1>
+
+<form action="estimate">
+    Enter Population Size : <input type="text" name="data-population" align="right"><br>
+    Enter Time To Elapse :    <input type="text" name="data-time-to-elapse" align="right"><br>
+    Enter Reported Cases :    <input type="text" name="data-reported-cases" align="right"><br>
+    Enter Total Hospital Beds :    <input type="text" name="data-total-hospital-beds" align="right"><br>
+    Select Period Type :    <select name="data-period-type" align="right">
+                                <option value="days">Days</option>
+                                <option value="weeks">Weeks</option>
+                                <option value="months">Months</option>
+                            </select><br>
+    <br>
+    <input type="submit" name="data-go-estimate">
+</form>
+{% endblock %}
