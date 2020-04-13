@@ -1,6 +1,49 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="A Covid19 Estimator that take inputs regarding different information about the pandemic">
+    <title >Covid19 Estimator</title>
+</head>
+<style>
+input[type=text], select {
+  align: middle;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
-{% block content %}
+input[type=submit] {
+  width: 100%;
+  background-color: #1d4d2a;
+  color: white;
+  padding: 14px 48px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #374d28;
+}
+
+div {
+  align: middle;
+  width: 300px;
+  height: 600px;
+  border-radius: 5px;
+  padding: 48px;
+  margin:0 auto;
+}
+</style>
+<body>
+    
 <p align="middle"  style = "font-family:georgia,garamond,serif;font-size:16px;font-style:italic;">
     Covid19 Impact Estimator
 </p>
@@ -27,4 +70,7 @@
 
 </form>
 </div>
-{% endblock %}
+
+
+</body>
+</html>
