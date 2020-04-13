@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<p align="middle"  style = "font-family:georgia,garamond,serif;font-size:16px;font-style:italic;">
+    Covid19 Impact Estimator
+</p>
+
+
+<div>
+  <form action="estimate">
+    <label for="data-population">Population Size </label>
+    <input type="text" name="data-population" id="data-population" placeholder="Enter population size"><br>
+    <label for="data-time-to-elapse">Time To Elapse </label>
+    <input type="text" name="data-time-to-elapse" id="data-time-to-elapse" placeholder="Enter time to elapse"><br>
+    <label for="data-reported-cases">Reported Cases </label>
+    <input type="text" name="data-reported-cases" id="data-reported-cases" placeholder="Enter the number of reported cases"><br>
+    <label for="data-total-hospital-beds">Total Hospital Beds </label>
+    <input type="text" name="data-total-hospital-beds" id="data-total-hospital-beds" placeholder="Enter total number of hospital beds"><br>
+    <label for="data-period-type">Period Type </label>
+    <select name="data-period-type" id="data-period-type">
+        <option value="days">Days</option>
+        <option value="weeks">Weeks</option>
+        <option value="months">Months</option>
+    </select><br>
+    <br>
+    <input type="submit" name="data-go-estimate">
+
+</form>
+</div>
+{% endblock %}
